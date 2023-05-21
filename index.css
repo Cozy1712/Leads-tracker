@@ -16,8 +16,9 @@ input {
 
 button {
    background-color: #5f9341;
-   border: none;
+   border: 1px solid #5f9341;
    cursor: pointer;
+   text-transform: uppercase;
    padding: 10px 20px;
    font-weight: bold;
    color: #fff;
@@ -25,15 +26,12 @@ button {
 
 }
 
-#box {
-    cursor: pointer;
-    background: lightseagreen;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    margin: 20px auto;
-    color: white;
-    font-weight: bold;
+
+#delete-btn {
+    background-color: #fff;
+    border: 1px solid #5f9341;
+    color: #5f9341;
+
 }
 
 ul {
