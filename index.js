@@ -21,12 +21,7 @@ if (leadsFromLocalStorage ){
 
 tabBtn.addEventListener("click", function (){
     //Grab url from chrome browser///
-    // chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     //   //console.log(tabs[0].url)
-    //     myLeads.push(tabs[0].url)
-    //     localStorage.setItem("myLeads", JSON.stringify(myLeads)) 
-    //     render(myLeads) 
-    // });
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
         myLeads.push(tabs[0].url)
         localStorage.setItem("myleads", JSON.stringify(myLeads))
