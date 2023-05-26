@@ -18,9 +18,6 @@ if (leadsFromLocalStorage ){
     render(myLeads);
     
 }
-// const tabs = [
-//     {url: "https://www.twitter.com/@cozy1712/"}
-// ]
 
 tabBtn.addEventListener("click", function (){
     //Grab url from chrome browser///
