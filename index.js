@@ -19,6 +19,9 @@ if (leadsFromLocalStorage ){
     
 }
 
+// //const tabs = [
+//     {www.twitter.com}
+// ]
 tabBtn.addEventListener("click", function (){
     //Grab url from chrome browser///
     //   //console.log(tabs[0].url)
