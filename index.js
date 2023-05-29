@@ -22,7 +22,7 @@ if (leadsFromLocalStorage ){
 // //const tabs = [
 //     {www.twitter.com}
 // ]
-tabBtn.addEventListener("click", function (){
+tabBtn.addEventListener("click",  () =>{
     //Grab url from chrome browser///
     //   //console.log(tabs[0].url)
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
@@ -56,14 +56,14 @@ function render(leads){
 
 
 //////// delete all bbutton ///////////////////
-deleteBtn.addEventListener("dblclick", function() {
+deleteBtn.addEventListener("dblclick", () => {
     localStorage.clear()
      myLeads = []
     render(myLeads)
 })
 
 ///////using eventlistner//////
-inputBtn.addEventListener("click", function() {
+inputBtn.addEventListener("click", () => {
    myLeads.push(inputEl.value)
    inputEl.value = " "  ; ////clear out input field
    localStorage.setItem("myLeads",JSON.stringify(myLeads))  ///////saving myleads array to local storage/////////
